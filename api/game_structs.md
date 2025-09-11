@@ -16,6 +16,8 @@
 * **[ABall_TA](#ABall_TA)**
 * **[UGoal_TA](#UGoal_TA)**
 * **[AGameEvent](#AGameEvent)**
+* **[FBox](#FBox)**
+* **[FVehicleInputs](#FVehicleInputs)**
 
 ---
 
@@ -240,5 +242,36 @@
 | Get furthest goal | **get_furthest_goal** | function(): float |
 | Get scoring player | **get_scoring_player** | function(): [APRI_TA](#APRI_TA) |
 | Get round number | **get_round_num** | function(): int |
+
+---
+
+### FBox
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| Minimum bounds | **min** | [vec3f](app_structs.md#vec3f) |
+| Maximum bounds | **max** | [vec3f](app_structs.md#vec3f) |
+| Is valid | **is_valid** | int |
+| Padding | **pad** | array<int, 0x3> |
+
+---
+
+### FVehicleInputs
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| Throttle input | **throttle** | float |
+| Steer input | **steer** | float |
+| Pitch input | **pitch** | float |
+| Yaw input | **yaw** | float |
+| Roll input | **roll** | float |
+| Dodge forward | **dodge_forward** | float |
+| Dodge right | **dodge_right** | float |
+| Handbrake | **b_handbrake** | bool |
+| Jump | **b_jump** | bool |
+| Activate boost | **b_activate_boost** | bool |
+| Holding boost | **b_holding_boost** | bool |
+| Jumped | **b_jumped** | bool |
+| Grab | **b_grab** | bool |
+| Button mash | **b_button_mash** | bool |
+| Target find | **b_target_find** | bool |
 
 ---
