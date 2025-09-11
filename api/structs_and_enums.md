@@ -288,3 +288,13 @@
 | num_local_players | **num_local_players** | int |
 
 ---
+
+
+### SDK
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| game_event | **game_event** | [AGameEvent](#AGameEvent) |
+| field_info_packet | **field_info_packet** | [FieldInfoPacket](#FieldInfoPacket) |
+| game_tick_packet | **game_tick_packet** | [GameTickPacket](#GameTickPacket) |
+
+---
