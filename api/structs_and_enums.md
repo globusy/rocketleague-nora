@@ -20,12 +20,10 @@
 * **[TileInfo](#TileInfo)**
 * **[TeamInfo](#TeamInfo)**
 * **[GameInfo](#GameInfo)**
-* **[GameTickPacket](#GameTickPacket)**
 * **[BoostPad](#BoostPad)**
 * **[GoalInfo](#GoalInfo)**
-* **[ControllerInput](#ControllerInput)**
-* **[MultiControllerInput](#MultiControllerInput)**
 * **[FieldInfoPacket](#FieldInfoPacket)**
+* **[GameTickPacket](#GameTickPacket)**
 ---
 
 ### vec2i
@@ -241,27 +239,6 @@
 
 ---
 
-### GameTickPacket
-| Description | Name | Type |
-|:------------|:----:|:-----|
-| game_cars | **game_cars** | vector<[#PlayerInfo](#PlayerInfo)> |
-| num_cars | **num_cars** | int |
-| game_boosts | **game_boosts** | vector<[#BoostPadState](#BoostPadState)> |
-| num_boost | **num_boost** | int |
-| game_ball | **game_ball** | [#BallInfo](#BallInfo) |
-| game_info | **game_info** | [#GameInfo](#GameInfo) |
-| dropshot_tiles | **dropshot_tiles** | vector<[#TileInfo](#TileInfo)> |
-| num_tiles | **num_tiles** | int |
-| teams | **teams** | vector<[#TeamInfo](#TeamInfo)> |
-| num_teams | **num_teams** | int |
-| local_player_name | **local_player_name** | string |
-| local_player_index | **local_player_index** | int |
-| local_player_indices | **local_player_indices** | vector<int> |
-| local_player_names | **local_player_names** | vector<string> |
-| num_local_players | **num_local_players** | int |
-
----
-
 ### BoostPad
 | Description | Name | Type |
 |:------------|:----:|:-----|
@@ -288,3 +265,26 @@
 | num_boosts | **num_boosts** | int |
 | goals | **goals** | vector<[#GoalInfo](#GoalInfo)> |
 | num_goals | **num_goals** | int |
+
+---
+
+### GameTickPacket
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| game_cars | **game_cars** | vector<[#PlayerInfo](#PlayerInfo)> |
+| num_cars | **num_cars** | int |
+| game_boosts | **game_boosts** | vector<[#BoostPadState](#BoostPadState)> |
+| num_boost | **num_boost** | int |
+| game_ball | **game_ball** | [#BallInfo](#BallInfo) |
+| game_info | **game_info** | [#GameInfo](#GameInfo) |
+| dropshot_tiles | **dropshot_tiles** | vector<[#TileInfo](#TileInfo)> |
+| num_tiles | **num_tiles** | int |
+| teams | **teams** | vector<[#TeamInfo](#TeamInfo)> |
+| num_teams | **num_teams** | int |
+| local_player_name | **local_player_name** | string |
+| local_player_index | **local_player_index** | int |
+| local_player_indices | **local_player_indices** | vector<int> |
+| local_player_names | **local_player_names** | vector<string> |
+| num_local_players | **num_local_players** | int |
+
+---
