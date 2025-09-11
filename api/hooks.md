@@ -3,8 +3,8 @@
 
 
 ## to see functions & classes
-- **[Functions](extracted/functions.md)**
-- **[Classes](extracted/classes.md)**
+- **[functions](extracted/functions.txt)**
+- **[classes](extracted/classes.txt)**
 
 ---
 
