@@ -1,3 +1,3 @@
 ## What are you looking for ?
-* **[functions](functions.md)**
-* **[classes](classes.md)**
+* **[functions](functions.txt)**
+* **[classes](classes.txt)**
