@@ -60,7 +60,7 @@
 ### ATeam_TA
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| Get team members | **get_members** | function(): TArray<[APRI_TA](#APRI_TA)> |
+| Get team members | **get_members** | function(): vector<[APRI_TA](#APRI_TA)> |
 
 ---
 
@@ -198,12 +198,12 @@
 | Description | Name | Type |
 |:------------|:----:|:-----|
 | Get countdown time | **get_countdown_time** | function(): int |
-| Get players | **get_players** | function(): TArray<[AController](#AController)> |
-| Get PRIs | **get_pris** | function(): TArray<[APRI_TA](#APRI_TA)> |
-| Get cars | **get_cars** | function(): TArray<[ACar_TA](#ACar_TA)> |
-| Get local players | **get_local_players** | function(): TArray<[APlayerController_TA](#APlayerController_TA)> |
+| Get players | **get_players** | function(): vector<[AController](#AController)> |
+| Get PRIs | **get_pris** | function(): vector<[APRI_TA](#APRI_TA)> |
+| Get cars | **get_cars** | function(): vector<[ACar_TA](#ACar_TA)> |
+| Get local players | **get_local_players** | function(): vector<[APlayerController_TA](#APlayerController_TA)> |
 | Get game owner | **get_game_owner** | function(): [APRI](#APRI) |
-| Get teams | **get_teams** | function(): TArray<[ATeam_TA](#ATeam_TA)> |
+| Get teams | **get_teams** | function(): vector<[ATeam_TA](#ATeam_TA)> |
 | Get soccer bitfield | **get_soccer_bitfield** | function(): int |
 | Check if round active | **is_round_active** | function(): bool |
 | Check if play replays | **is_play_replays** | function(): bool |
@@ -226,9 +226,9 @@
 | Get wait time remaining | **get_wait_time_remaining** | function(): int |
 | Get total game time played | **get_total_game_time_played** | function(): float |
 | Get overtime time played | **get_overtime_time_played** | function(): float |
-| Get game balls | **get_game_balls** | function(): TArray<[ABall_TA](#ABall_TA)> |
+| Get game balls | **get_game_balls** | function(): vector<[ABall_TA](#ABall_TA)> |
 | Get total game balls | **get_total_game_balls** | function(): int |
-| Get goals | **get_goals** | function(): TArray<[UGoal_TA](#UGoal_TA)> |
+| Get goals | **get_goals** | function(): vector<[UGoal_TA](#UGoal_TA)> |
 | Get game winner | **get_game_winner** | function(): [ATeam_TA](#ATeam_TA) |
 | Get match winner | **get_match_winner** | function(): [ATeam_TA](#ATeam_TA) |
 | Get MVP | **get_mvp** | function(): [APRI_TA](#APRI_TA) |
