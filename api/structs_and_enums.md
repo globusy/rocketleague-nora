@@ -168,3 +168,112 @@
 | PRI | **PRI** | [APRI_TA](#APRI_TA) |
 
 ---
+
+### DropShotInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| absorbed_force | **absorbed_force** | float |
+| damage_index | **damage_index** | int |
+| force_accum_recent | **force_accum_recent** | float |
+
+---
+
+### BallInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| physics | **physics** | [#Physics](#Physics) |
+| latest_touch | **latest_touch** | [#Touch](#Touch) |
+| drop_shot_info | **drop_shot_info** | [#DropShotInfo](#DropShotInfo) |
+| collision_shape | **collision_shape** | [#CollisionShape](#CollisionShape) |
+
+---
+
+### BoostPadState
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| is_active | **is_active** | bool |
+| timer | **timer** | float |
+
+---
+
+### TileInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| tile_state | **tile_state** | int |
+
+---
+
+### TeamInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| team_name | **team_name** | string |
+| size | **size** | int |
+| score | **score** | int |
+| team_index | **team_index** | int |
+| team_color | **team_color** | [vec4i](#vec4i) |
+
+---
+
+### GameInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| seconds_elapsed | **seconds_elapsed** | float |
+| game_time_remaining | **game_time_remaining** | float |
+| is_overtime | **is_overtime** | bool |
+| is_unlimited_time | **is_unlimited_time** | bool |
+| is_round_active | **is_round_active** | bool |
+| is_kickoff_pause | **is_kickoff_pause** | bool |
+| is_match_ended | **is_match_ended** | bool |
+| world_gravity_z | **world_gravity_z** | float |
+| game_speed | **game_speed** | float |
+| frame_num | **frame_num** | int |
+
+---
+
+### GameTickPacket
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| game_cars | **game_cars** | vector<[#PlayerInfo](#PlayerInfo)> |
+| num_cars | **num_cars** | int |
+| game_boosts | **game_boosts** | vector<[#BoostPadState](#BoostPadState)> |
+| num_boost | **num_boost** | int |
+| game_ball | **game_ball** | [#BallInfo](#BallInfo) |
+| game_info | **game_info** | [#GameInfo](#GameInfo) |
+| dropshot_tiles | **dropshot_tiles** | vector<[#TileInfo](#TileInfo)> |
+| num_tiles | **num_tiles** | int |
+| teams | **teams** | vector<[#TeamInfo](#TeamInfo)> |
+| num_teams | **num_teams** | int |
+| local_player_name | **local_player_name** | string |
+| local_player_index | **local_player_index** | int |
+| local_player_indices | **local_player_indices** | vector<int> |
+| local_player_names | **local_player_names** | vector<string> |
+| num_local_players | **num_local_players** | int |
+
+---
+
+### BoostPad
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| location | **location** | [vec3f](#vec3f) |
+| is_full_boost | **is_full_boost** | bool |
+
+---
+
+### GoalInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| team_num | **team_num** | int |
+| location | **location** | [vec3f](#vec3f) |
+| direction | **direction** | [vec3f](#vec3f) |
+| width | **width** | float |
+| height | **height** | float |
+
+---
+
+### FieldInfoPacket
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| boost_pads | **boost_pads** | vector<[#BoostPad](#BoostPad)> |
+| num_boosts | **num_boosts** | int |
+| goals | **goals** | vector<[#GoalInfo](#GoalInfo)> |
+| num_goals | **num_goals** | int |
