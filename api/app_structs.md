@@ -161,8 +161,8 @@
 ### PlayerInfo
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| physics | **physics** | [#Physics](#Physics) |
-| score_info | **score_info** | [#ScoreInfo](#ScoreInfo) |
+| physics | **physics** | [Physics](#Physics) |
+| score_info | **score_info** | [ScoreInfo](#ScoreInfo) |
 | is_demolished | **is_demolished** | bool |
 | has_wheel_contact | **has_wheel_contact** | bool |
 | is_super_sonic | **is_super_sonic** | bool |
@@ -191,10 +191,10 @@
 ### BallInfo
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| physics | **physics** | [#Physics](#Physics) |
-| latest_touch | **latest_touch** | [#Touch](#Touch) |
-| drop_shot_info | **drop_shot_info** | [#DropShotInfo](#DropShotInfo) |
-| collision_shape | **collision_shape** | [#CollisionShape](#CollisionShape) |
+| physics | **physics** | [Physics](#Physics) |
+| latest_touch | **latest_touch** | [Touch](#Touch) |
+| drop_shot_info | **drop_shot_info** | [DropShotInfo](#DropShotInfo) |
+| collision_shape | **collision_shape** | [CollisionShape](#CollisionShape) |
 
 ---
 
@@ -262,9 +262,9 @@
 ### FieldInfoPacket
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| boost_pads | **boost_pads** | vector<[#BoostPad](#BoostPad)> |
+| boost_pads | **boost_pads** | vector<[BoostPad](#BoostPad)> |
 | num_boosts | **num_boosts** | int |
-| goals | **goals** | vector<[#GoalInfo](#GoalInfo)> |
+| goals | **goals** | vector<[GoalInfo](#GoalInfo)> |
 | num_goals | **num_goals** | int |
 
 ---
@@ -272,15 +272,15 @@
 ### GameTickPacket
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| game_cars | **game_cars** | vector<[#PlayerInfo](#PlayerInfo)> |
+| game_cars | **game_cars** | vector<[PlayerInfo](#PlayerInfo)> |
 | num_cars | **num_cars** | int |
-| game_boosts | **game_boosts** | vector<[#BoostPadState](#BoostPadState)> |
+| game_boosts | **game_boosts** | vector<[BoostPadState](#BoostPadState)> |
 | num_boost | **num_boost** | int |
-| game_ball | **game_ball** | [#BallInfo](#BallInfo) |
-| game_info | **game_info** | [#GameInfo](#GameInfo) |
-| dropshot_tiles | **dropshot_tiles** | vector<[#TileInfo](#TileInfo)> |
+| game_ball | **game_ball** | [BallInfo](#BallInfo) |
+| game_info | **game_info** | [GameInfo](#GameInfo) |
+| dropshot_tiles | **dropshot_tiles** | vector<[TileInfo](#TileInfo)> |
 | num_tiles | **num_tiles** | int |
-| teams | **teams** | vector<[#TeamInfo](#TeamInfo)> |
+| teams | **teams** | vector<[TeamInfo](#TeamInfo)> |
 | num_teams | **num_teams** | int |
 | local_player_name | **local_player_name** | string |
 | local_player_index | **local_player_index** | int |
