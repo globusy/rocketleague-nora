@@ -175,7 +175,7 @@
 | hitbox | **hitbox** | [BoxShape](#BoxShape) |
 | hitbox_offset | **hitbox_offset** | [vec3f](#vec3f) |
 | spawn_id | **spawn_id** | int |
-| PRI | **PRI** | [APRI_TA](#APRI_TA) |
+| PRI | **PRI** | [APRI_TA](game_structs.md#APRI_TA) |
 
 ---
 
@@ -294,7 +294,7 @@
 ### SDK
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| game_event | **game_event** | [AGameEvent](#AGameEvent) |
+| game_event | **game_event** | [AGameEvent](game_structs.md#AGameEvent) |
 | field_info_packet | **field_info_packet** | [FieldInfoPacket](#FieldInfoPacket) |
 | game_tick_packet | **game_tick_packet** | [GameTickPacket](#GameTickPacket) |
 
