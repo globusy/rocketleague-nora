@@ -14,7 +14,18 @@
 * **[CylinderShape](#CylinderShape)**
 * **[CollisionShape](#CollisionShape)**
 * **[PlayerInfo](#PlayerInfo)**
-
+* **[DropShotInfo](#DropShotInfo)**
+* **[BallInfo](#BallInfo)**
+* **[BoostPadState](#BoostPadState)**
+* **[TileInfo](#TileInfo)**
+* **[TeamInfo](#TeamInfo)**
+* **[GameInfo](#GameInfo)**
+* **[GameTickPacket](#GameTickPacket)**
+* **[BoostPad](#BoostPad)**
+* **[GoalInfo](#GoalInfo)**
+* **[ControllerInput](#ControllerInput)**
+* **[MultiControllerInput](#MultiControllerInput)**
+* **[FieldInfoPacket](#FieldInfoPacket)**
 ---
 
 ### vec2i
