@@ -6,9 +6,14 @@
 * **[vec3f](#vec3f)**
 * **[vec4i](#vec4i)**
 * **[vec4f](#vec4f)**
-
 * **[FVehicleInputs](#FVehicleInputs)**
 * **[Physics](#Physics)**
+* **[Touch](#Touch)**
+* **[BoxShape](#BoxShape)**
+* **[SphereShape](#SphereShape)**
+* **[CylinderShape](#CylinderShape)**
+* **[CollisionShape](#CollisionShape)**
+* **[PlayerInfo](#PlayerInfo)**
 
 ---
 
@@ -90,10 +95,10 @@
 ### Physics
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| location | **location** | vec3f |
-| rotation | **rotation** | vec3f |
-| velocity | **velocity** | vec3f |
-| angular_velocity | **angular_velocity** | vec3f |
+| location | **location** | [vec3f](#vec3f) |
+| rotation | **rotation** | [vec3f](#vec3f) |
+| velocity | **velocity** | [vec3f](#vec3f) |
+| angular_velocity | **angular_velocity** | [vec3f](#vec3f) |
 
 ---
 
@@ -102,8 +107,8 @@
 |:------------|:----:|:-----|
 | name | **name** | string |
 | time_seconds | **time_seconds** | float |
-| hit_location | **hit_location** | vec3f |
-| hit_normal | **hit_normal** | vec3f |
+| hit_location | **hit_location** | [vec3f](#vec3f) |
+| hit_normal | **hit_normal** | [vec3f](#vec3f) |
 | team | **team** | int |
 | player_index | **player_index** | int |
 
@@ -136,18 +141,18 @@
 ### CollisionShape
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| type | **type** | (ShapeType)[#ShapeType] |
-| box | **box** | (BoxShape)[#BoxShape] |
-| sphere | **sphere** | (SphereShape)[#SphereShape] |
-| cylinder | **cylinder** | (CylinderShape)[CylinderShape] |
+| type | **type** | [ShapeType](#ShapeType) |
+| box | **box** | [BoxShape](#BoxShape) |
+| sphere | **sphere** | [SphereShape](#SphereShape) |
+| cylinder | **cylinder** | [CylinderShape](#CylinderShape) |
 
 ---
 
 ### PlayerInfo
 | Description | Name | Type |
 |:------------|:----:|:-----|
-| physics | **physics** | (Physics)[#Physics] |
-| score_info | **score_info** | (ScoreInfo)[#ScoreInfo] |
+| physics | **physics** | [#Physics](#Physics) |
+| score_info | **score_info** | [#ScoreInfo](#ScoreInfo) |
 | is_demolished | **is_demolished** | bool |
 | has_wheel_contact | **has_wheel_contact** | bool |
 | is_super_sonic | **is_super_sonic** | bool |
@@ -157,9 +162,9 @@
 | name | **name** | string |
 | team | **team** | int |
 | boost | **boost** | int |
-| hitbox | **hitbox** | (BoxShape)[#BoxShape] |
-| hitbox_offset | **hitbox_offset** | (vec3f)[#vec3f] |
+| hitbox | **hitbox** | [BoxShape](#BoxShape) |
+| hitbox_offset | **hitbox_offset** | [vec3f](#vec3f) |
 | spawn_id | **spawn_id** | int |
-| PRI | **PRI** | (APRI_TA)[#APRI_TA] |
+| PRI | **PRI** | [APRI_TA](#APRI_TA) |
 
 ---
