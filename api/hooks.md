@@ -43,4 +43,6 @@ add_callback(
     "Function TAGame.GameViewportClient_TA.HandleKeyPress", -- The game function to hook into
     handle_key_press -- The callback function to execute
 )
+-- you can remove callback by doing this
+-- remove_callback("handle_key_press")
 ```
