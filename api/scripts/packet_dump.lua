@@ -129,8 +129,8 @@ function print_game_tick_packet(packet)
         print("  Local Player Indices: " .. table.concat(packet.local_player_indices, ", "))
     end
     
-    if packet.localPlayerNames and #packet.localPlayerNames > 0 then
-        print("  Local Player Names: " .. table.concat(packet.localPlayerNames, ", "))
+    if packet.local_player_names and #packet.local_player_names > 0 then
+        print("  Local Player Names: " .. table.concat(packet.local_player_names, ", "))
     end
     
     -- DropShot Tiles (if available)
