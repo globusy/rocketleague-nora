@@ -1,4 +1,4 @@
-## Structs
+## App Structs
 
 * **[vec2i](#vec2i)**
 * **[vec2f](#vec2f)**
@@ -24,6 +24,7 @@
 * **[GoalInfo](#GoalInfo)**
 * **[FieldInfoPacket](#FieldInfoPacket)**
 * **[GameTickPacket](#GameTickPacket)**
+
 ---
 
 ### vec2i
