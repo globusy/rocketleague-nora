@@ -140,7 +140,7 @@
 | Get car | **get_car** | function(): [ACar_TA](#ACar_TA) |
 | Get APRI_TA | **get_apri** | function(): [APRI_TA](#APRI_TA) |
 | Get vehicle input | **get_vehicle_input** | function(): FVehicleInputs |
-| Set vehicle input | **set_vehicle_input** | function(FVehicleInputs): void |
+| Set vehicle input | **send_input** | function(FVehicleInputs): void |
 
 ---
 
