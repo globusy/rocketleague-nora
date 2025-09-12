@@ -2,6 +2,7 @@
 * **[print(string)](#print)**
 * **[printps(string)](#printps)**
 * **[sleep(int ms)](#sleep)**
+* **[get_sdk()](#get_sdk)**
 * **[run_thread(function)](#run_thread)**
 * **[add_callback(string, string, function)](#add_callback)**
 * **[remove_callback(string)](#remove_callback)**
@@ -22,6 +23,25 @@ printps("`cHello`` `@Nora```4!``")
 ### sleep
 ```lua
 sleep(1337) -- sleeps 1337 milliseconds
+```
+
+### get_sdk
+```lua
+--[[
+    Retrieves the simplified SDK interface for game data access.
+    Provides direct, intuitive access to commonly used game properties.
+    
+    @return SDK - Streamlined SDK instance with logical property hierarchy
+    @example
+]]
+
+local sdk = get_sdk()
+local game_info = sdk.game_packet.game_info
+local score_info = sdk.game_packet.score_info
+
+printps("`#Time remaining``: `c"..game_info.game_time_remaining.."``.")
+printps("`#Own Goals``: `c"..score_info.own_goals.."``.")
+
 ```
 
 ### run_thread
