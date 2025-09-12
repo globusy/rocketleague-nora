@@ -4,6 +4,8 @@
 * **[sleep(int ms)](#sleep)**
 * **[run_thread(function)](#run_thread)**
 * **[add_callback(string, string, function)](#add_callback)**
+* **[remove_callback(string)](#remove_callback)**
+* **[remove_callbacks()](#remove_callbacks)**
 
 ### print
 ```lua
@@ -116,3 +118,39 @@ add_callback(
 -- Example: How to remove this callback later ( you can use this in another lua script too )
 -- remove_callback("game_activation_handler")
 ```
+
+### remove_callback
+```lua
+--[[
+    Removes a specific registered callback by its identifier.
+    
+    This function deregisters a previously added callback, preventing it from
+    receiving future events. Useful for dynamic callback management during
+    state changes or cleanup.
+    
+    @param callback string - The unique identifier used when registering the callback
+    @return boolean - True if callback was found and removed, false otherwise
+    @throws Error if callback_id is not a string or is nil
+    
+    @example
+    remove_callback("game_activation_handler")  -- Remove specific callback
+]]
+remove_callback("game_activation_handler")
+```
+
+### remove_callbacks
+```lua
+--[[
+    Removes all registered callbacks and clears the callback registry.
+    
+    This function performs comprehensive cleanup by deregistering every
+    active callback. Use cautiously as it affects all system components
+    relying on callbacks.
+    
+    @return integer - Number of callbacks removed
+    @example
+    remove_callbacks()  -- Clean slate, no more callbacks active
+]]
+remove_callbacks()
+```
+
