@@ -13,8 +13,7 @@ function dump(o)
    end
 end
 
-sdk = get_sdk()
-if not sdk.game_event then
+if not g_sdk.game_event then
     print("Error: game_event not available")
     return
 end
