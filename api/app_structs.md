@@ -273,7 +273,7 @@
 | Description | Name | Type |
 |:------------|:----:|:-----|
 | game_event | **game_event** | [AGameEvent](game_structs.md#AGameEvent) |
-| field_info_packet | **field_info_packet** | [FieldInfoPacket](#FieldInfoPacket) |
-| game_tick_packet | **game_tick_packet** | [GameTickPacket](#GameTickPacket) |
+| field_info_packet | **field_packet** | [FieldInfoPacket](#FieldInfoPacket) |
+| game_tick_packet | **game_packet** | [GameTickPacket](#GameTickPacket) |
 
 ---
