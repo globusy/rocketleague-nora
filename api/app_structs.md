@@ -8,6 +8,7 @@
 * **[vec4f](#vec4f)**
 * **[Physics](#Physics)**
 * **[Touch](#Touch)**
+* **[ScoreInfo](#ScoreInfo)**
 * **[BoxShape](#BoxShape)**
 * **[SphereShape](#SphereShape)**
 * **[CylinderShape](#CylinderShape)**
@@ -99,6 +100,19 @@
 | hit_normal | **hit_normal** | [vec3f](#vec3f) |
 | team | **team** | int |
 | player_index | **player_index** | int |
+
+---
+
+### ScoreInfo
+| Description | Name | Type |
+|:------------|:----:|:-----|
+| Score | **score** | int |
+| Goals | **goals** | int |
+| Own goals | **own_goals** | int |
+| Assists | **assists** | int |
+| Saves | **saves** | int |
+| Shots | **shots** | int |
+| Demolitions | **demolitions** | int |
 
 ---
 
