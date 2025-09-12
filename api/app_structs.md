@@ -6,7 +6,6 @@
 * **[vec3f](#vec3f)**
 * **[vec4i](#vec4i)**
 * **[vec4f](#vec4f)**
-* **[FVehicleInputs](#FVehicleInputs)**
 * **[Physics](#Physics)**
 * **[Touch](#Touch)**
 * **[BoxShape](#BoxShape)**
@@ -78,27 +77,6 @@
 | Y-coordinate | **y** | float |
 | Z-coordinate | **z** | float |
 | W-coordinate | **w** | float |
-
----
-
-### FVehicleInputs
-| Description | Name | Type |
-|:------------|:----:|:-----|
-| throttle | **throttle** | float |
-| steer | **steer** | float |
-| pitch | **pitch** | float |
-| yaw | **yaw** | float |
-| roll | **roll** | float |
-| dodge_forward | **dodge_forward** | float |
-| dodge_right | **dodge_right** | float |
-| b_handbrake | **b_handbrake** | bool |
-| b_jump | **b_jump** | bool |
-| b_activate_boost | **b_activate_boost** | bool |
-| b_holding_boost | **b_holding_boost** | bool |
-| b_jumped | **b_jumped** | bool |
-| b_grab | **b_grab** | bool |
-| b_button_mash | **b_button_mash** | bool |
-| b_target_find | **b_target_find** | bool |
 
 ---
 
