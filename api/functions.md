@@ -160,7 +160,7 @@ remove_callbacks()
 ### send_input
 ```lua
 --[[
-    send_input example for Rocket Simulator
+    send_input example for Rocket League
     
     Parameters:
     b_jump (boolean) - Makes the player jump
