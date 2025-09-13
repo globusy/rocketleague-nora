@@ -1,4 +1,4 @@
-## functions
+## main functions
 * **[print(string)](#print)**
 * **[printps(string)](#printps)**
 * **[sleep(int ms)](#sleep)**
@@ -6,6 +6,9 @@
 * **[add_callback(string, string, function)](#add_callback)**
 * **[remove_callback(string)](#remove_callback)**
 * **[remove_callbacks()](#remove_callbacks)**
+
+## struct functions
+* **[local_player:send_input(table)](#send_input)**
 
 ### print
 ```lua
@@ -154,3 +157,25 @@ remove_callback("game_activation_handler")
 remove_callbacks()
 ```
 
+### send_input
+```lua
+--[[
+    send_input example for Rocket Simulator
+    
+    Parameters:
+    b_jump (boolean) - Makes the player jump
+    b_activate_boost (boolean) - Activates boost
+    b_holding_boost (boolean) - Holds boost until released
+    and more check game_structs
+    Returns: None
+]]
+
+local local_player = g_sdk.game_event:get_local_players()[1] -- Get local player
+
+-- Send jump with boost input
+local_player:send_input({
+    b_jump = true,            -- Trigger jump
+    b_activate_boost = true,  -- Activate boost
+    b_holding_boost = true    -- Hold boost continuously
+})
+```
